@@ -1,0 +1,42 @@
+.btn_container {
+    width: 80%;
+    height: 60px;
+    border: 2px solid black;
+    margin: 0 auto;
+    border-radius: 30px;
+
+    display: flex;
+}
+
+.calculator {
+    border-right: 2px solid black;
+}
+
+
+
+.counter,.calculator{
+    width: 50%;
+    font-size: 2rem;
+    transition: 0.3s;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.calculator:hover,.counter:hover{
+    background-color: gray;
+    
+}
+
+.calculator:hover{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.counter:hover{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
