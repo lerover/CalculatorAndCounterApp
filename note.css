@@ -1,3 +1,19 @@
+.reset_form{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.reset_btn{
+width: 100px;
+height: 50px;
+font-size: 1rem;
+}
+.calculatorblk{
+    display: inline-block;
+    justify-self: center;
+}
+
 .option_container {
     width: 80%;
     height: 60px;

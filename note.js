@@ -1,6 +1,6 @@
 const calculatorEl = document.querySelector('.calculator_option')
 const pushBlkEl = document.querySelector('.for_calculator_and_counter')
-calculatorEl.addEventListener('click',handleCalculator)
+calculatorEl.addEventListener('click', handleCalculator)
 
 
 
@@ -18,7 +18,7 @@ function handleCalculator() {
     input_border.classList.add('input_border')
 
     const input_number = document.createElement('input')
-    input_number.setAttribute('type','number')
+    input_number.setAttribute('type', 'number')
     input_number.classList.add('input_number')
     input_border.appendChild(input_number)
 
@@ -27,7 +27,7 @@ function handleCalculator() {
     input_border.appendChild(show_operator)
 
     const input_number1 = document.createElement('input')
-    input_number1.setAttribute('type','number')
+    input_number1.setAttribute('type', 'number')
     input_number1.classList.add('input_number1')
     input_border.appendChild(input_number1)
 
@@ -39,5 +39,60 @@ function handleCalculator() {
     btn_container.classList.add('btn_container')
     calculator_article.appendChild(btn_container)
 
-    document.createElement('button')
+    // for textContent of Result
+
+
+    const plusbtn = document.createElement('button')
+    plusbtn.textContent = '+'
+
+    btn_container.appendChild(plusbtn)
+
+    plusbtn.addEventListener('click', function add() {
+
+        show_operator.innerText = '+'
+        const total = Number(input_number.value) + Number(input_number1.value)
+        result.textContent = total
+    })
+
+    const subtractbtn = document.createElement('button')
+    subtractbtn.textContent = '-'
+
+    btn_container.appendChild(subtractbtn)
+
+    subtractbtn.addEventListener('click', function subtract() {
+
+        show_operator.innerText = '-'
+        const total = Number(input_number.value) - Number(input_number1.value)
+        result.textContent = total
+    })
+
+    const btn_container2 = document.createElement('div')
+    btn_container2.classList.add('btn_container')
+    calculator_article.appendChild(btn_container2)
+    
+    const manipulatebtn = document.createElement('button')
+    manipulatebtn.textContent = 'x'
+
+    btn_container2.appendChild(manipulatebtn)
+
+    manipulatebtn.addEventListener('click', function manipulate() {
+
+        show_operator.innerText = 'x'
+        const total = Number(input_number.value) * Number(input_number1.value)
+        result.textContent = total
+    })
+
+    const dividebtn = document.createElement('button')
+    dividebtn.textContent = 'divide'
+
+    btn_container2.appendChild(dividebtn)
+
+    dividebtn.addEventListener('click', function divide() {
+
+        show_operator.innerText = 'divide'
+        const total = Number(input_number.value) / Number(input_number1.value)
+        result.textContent = total
+    })
+
+
 }
