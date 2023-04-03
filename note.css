@@ -43,7 +43,7 @@ font-size: 1rem;
 
 
 
-.calculator_option:hover,.counter:hover{
+.calculator_option:hover,.counter_option:hover{
     background-color: gray;
     
 }
@@ -178,4 +178,103 @@ button{
     border-radius: 50px;
     font-size: 2rem; 
 }
+}
+
+
+.count {
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.width_of_card{
+    width: 500px; margin: 0 auto; display: flex; justify-content: space-between; 
+}
+
+
+.coffee_form {
+    width: 40%;
+    height: 90vb;
+    margin: 0 auto;
+    background: linear-gradient(gray, black);
+    background-image:linear-gradient(rgba(255, 255, 255, 0.445),rgba(128, 128, 128, 0.532)), url(https://th.bing.com/th/id/R.45eed61cb829314d84f286d05096fe4c?rik=%2fnzdoi%2fj7trrHw&riu=http%3a%2f%2f3.bp.blogspot.com%2f-U2uqPh7hw0U%2fUHNEoLahrPI%2fAAAAAAAAAv8%2fbuuzujhKZkY%2fs1600%2fcoffee.jpg&ehk=dkmc%2f9LTQye2YzcQNgNKNejyMIzM9dAM%2bz%2b5TzFWTFc%3d&risl=&pid=ImgRaw&r=0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-align: center;
+}
+
+.increase,
+.decrease {
+    width: 150px;
+    height: 50px;
+    font-size: 40px;
+    transition: 0.3s;
+    text-align: center;
+    border-color: black;
+    cursor: pointer;
+}
+
+.increase,
+.decrease,
+.button {
+    border-radius: 20px;
+    background-color: transparent;
+    color: black;
+}
+
+button {
+    background-color: transparent;
+}
+
+.button {
+    width: 150px;
+    height: 50px;
+    transition: 0.3s;
+    font-size: 20px;
+
+}
+
+.width_of_card {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.font_size_Reset{
+    font-size: 20px;
+}
+
+.new_style{
+    width: 70%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.increase:hover,
+.decrease:hover,
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.422);
+}
+
+@media(max-width:500px) {
+    .coffee_form{
+        width: 100%;
+        margin:none;
+    }
+
+    .increase,.decrease,.button{
+        width: 70px;
+        font-size: 1rem;
+        color: black;
+        
+    }
+
+    .width_of_card{
+        width: 100%;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+
 }
