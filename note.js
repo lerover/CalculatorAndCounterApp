@@ -170,4 +170,22 @@ counter_option.addEventListener('click', function () {
         console.log(save)
     })
 
+    const greet_button = document.createElement('button')
+    greet_button.classList.add('button')
+    greet_button.textContent='Greet'
+    save_btn_container.appendChild(greet_button)
+    greet_button.addEventListener('click',function () {
+        greeting.textContent= `Hello Sir!! 
+        Nice to meet you!! 
+        What would you like to order?`
+    })
+
+    const reset_greet_button = document.createElement('button')
+    reset_greet_button.classList.add('button')
+    reset_greet_button.textContent='Again'
+    save_btn_container.appendChild(reset_greet_button)
+    reset_greet_button.addEventListener('click', function() {
+        greeting.textContent= 'Coffee Count'
+    })
+
 })
