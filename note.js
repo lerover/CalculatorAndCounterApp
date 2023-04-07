@@ -94,6 +94,17 @@ function handleCalculator() {
         result.textContent = total
     })
 
+    const btn_container3 = document.createElement('div')
+    btn_container3.classList.add('btn_container')
+    calculator_article.appendChild(btn_container3)
+
+    const reset_button = document.createElement('button')
+    btn_container3.appendChild(reset_button)
+    reset_button.textContent = 'C'
+    reset_button.setAttribute('type', 'reset')
+
+
+
 
 }
 
@@ -162,7 +173,7 @@ counter_option.addEventListener('click', function () {
     const save_button = document.createElement('button')
     save_button.classList.add('button')
     save_btn_container.appendChild(save_button)
-    save_button.textContent='Save'
+    save_button.textContent = 'Save'
 
     let save = []
     save_button.addEventListener('click', function () {
@@ -172,20 +183,20 @@ counter_option.addEventListener('click', function () {
 
     const greet_button = document.createElement('button')
     greet_button.classList.add('button')
-    greet_button.textContent='Greet'
+    greet_button.textContent = 'Greet'
     save_btn_container.appendChild(greet_button)
-    greet_button.addEventListener('click',function () {
-        greeting.textContent= `Hello Sir!! 
+    greet_button.addEventListener('click', function () {
+        greeting.textContent = `Hello Sir!! 
         Nice to meet you!! 
         What would you like to order?`
     })
 
     const reset_greet_button = document.createElement('button')
     reset_greet_button.classList.add('button')
-    reset_greet_button.textContent='Again'
+    reset_greet_button.textContent = 'Again'
     save_btn_container.appendChild(reset_greet_button)
-    reset_greet_button.addEventListener('click', function() {
-        greeting.textContent= 'Coffee Count'
+    reset_greet_button.addEventListener('click', function () {
+        greeting.textContent = 'Coffee Count'
     })
 
 })
